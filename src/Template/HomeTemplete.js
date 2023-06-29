@@ -17,11 +17,11 @@ export default class HomeTemplete extends Component {
     return (
       <div className="row">
         <nav className="nav col-2 flex-column justify-content-center ">
-          <NavLink className={({isActive})=>isActive?'nav-link border border-2 border-info-subtle':'nav-link border border-2 border-white'} aria-current="page" to="home" >
-            Home
+          <NavLink className={({isActive})=>isActive?'nav-link border border-2 border-info-subtle bg-info text-white':'nav-link border border-2 border-white text-info'} aria-current="page" to="home" >
+          <i className="fa-solid fa-house fa-fade "></i> Home <i class="fa-solid fa-arrow-right" style={{position:"relative", top:"0px", left:"81px"}}></i>
           </NavLink>
-          <NavLink className={({isActive})=>isActive?'nav-link border border-2 border-info-subtle':'nav-link border border-2 border-white'} to="shop">
-            Shop
+          <NavLink className={({isActive})=>isActive?'nav-link border border-2 border-succes-subtle bg-success text-white':'nav-link border border-2 border-white text-success'} to="shop">
+          <i class="fa-solid fa-cart-shopping fa-fade"></i> Go to Cart <i class="fa-solid fa-arrow-right" style={{position:"relative", top:"0px", left:"51px"}}></i>
           </NavLink>
         </nav>
         <div className="tab-content col-10" id="myTabContent">

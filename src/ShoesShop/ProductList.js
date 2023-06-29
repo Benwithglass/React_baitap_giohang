@@ -11,8 +11,8 @@ export default class ProductList extends Component {
     
     return (
       <div>
-        <h1 className='fw-light text-center my-3'>Bài Tập Giỏ Hàng Shoes Shop</h1>
-        <div className='row'>
+        <h1 className='fw-light text-center mt-3 bg-primary text-white'>CYBER'S SHOE SHOP</h1>
+        <div className='row bg-warning'>
             {data.map(product=>{
                 return <ProductItem item={product} key={product.id} changeChooseItem={this.changeChooseItem}/>
             })}

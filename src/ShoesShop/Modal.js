@@ -5,6 +5,7 @@ export default class Modal extends Component {
     let {item} = this.props;
     return (
       <div className=''>
+        <h1 className='text-center'>YOUR CART</h1>
         <div className="row">
           <div className="col-5">
               <img src={item.image} alt="..." width={400} />
